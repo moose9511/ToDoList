@@ -1,0 +1,17 @@
+# Build
+/build/
+
+# Executables
+*.exe
+
+# Local data
+tasks.txt
+temp.txt
+
+# Visual Studio
+.vs/
+*.vcxproj*
+*.user
+
+# Misc
+*.log

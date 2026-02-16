@@ -1,0 +1,18 @@
+name: Build Windows
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: g++ -std=c++17 -O2 -o ToDoList.exe ToDoList.cpp
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ToDoList-windows
+          path: ToDoList.exe
