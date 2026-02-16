@@ -8,6 +8,12 @@ Simple Windows console ToDo list application (single-file C++).
 **Download pre-built executable:**
 
 Go to [Releases](https://github.com/moose9511/ToDoList/releases) and download `ToDoList.exe`. Run it directly—no installation or compilation required.
+# After downloading ToDoList.exe, right-click it and:
+# 1. Select "Properties"
+# 2. Check "Unblock" at the bottom
+# 3. Click "Apply" → "OK"
+# OR use PowerShell:
+Unblock-File -Path C:\path\to\ToDoList.exe
 
 ## Build from Source (Optional)
 
